@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Gentlemens Script';
+  src: url('https://raw.githubusercontent.com/thebabirosa/font/main/Gentlemens%20Script.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Palash';
+  src: url('https://raw.githubusercontent.com/thebabirosa/font/main/Palash-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=HK+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@300;400;500;600&display=swap');
+
+@theme {
+  --font-display: "Palash", serif;
+  --font-script: "Gentlemens Script", cursive;
+  --font-body: "HK Grotesk", sans-serif;
+  --font-condensed: "IBM Plex Sans Condensed", sans-serif;
+
+  --color-venus-black: #000000;
+  --color-venus-bg: #F5F5F5;
+  --color-venus-gold: #C5A059;
+  --color-venus-muted: #4A4A4A;
+}
+
+body {
+  background-color: var(--color-venus-bg);
+  color: var(--color-venus-black);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.font-condensed {
+  font-family: var(--font-condensed);
+}
