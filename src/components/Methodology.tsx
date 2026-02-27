@@ -19,10 +19,11 @@ export default function Methodology() {
             
             <div className="space-y-4 max-w-md">
               {[
-                "Já são autoridade",
-                "Já têm clientes",
-                "Já faturam",
-                "Mas querem escalar sem exaustão"
+                "Ainda não validou produto ou modelo de negócio",
+                "Está buscando fórmula rápida",
+                "Quer aumentar faturamento sem estruturar base",
+                "Espera que alguém faça por ela",
+                "Quer crescer mantendo o mesmo modelo que já chegou no limite"
               ].map((item, i) => (
                 <div key={i} className="border border-venus-black rounded-xl px-6 py-4 bg-white/50 shadow-sm">
                   <span className="font-body text-lg md:text-xl font-medium text-venus-black">{item}</span>
@@ -50,10 +51,10 @@ export default function Methodology() {
             </h2>
             
             <div className="space-y-6 font-condensed text-sm text-venus-black">
-              <p>Você para de operar em um modelo que chegou ao platô.</p>
-              <p>E constrói um ecossistema que gera lucro e liberdade.<br/>Para de se esforçar tanto para crescer.<br/>E passa a crescer com previsibilidade e lucro.</p>
-              <p>Para depender da própria energia.<br/>E passa a operar em um sistema que se retroalimenta automaticamente.</p>
-              <p>Escala não é vender mais.<br/>é construir legado além do faturamento, e que gera lucro no curto, médio e principalmente no longo prazo.</p>
+              <p>Você para de operar no limite.</p>
+              <p>Você constrói um ecossistema que gera lucro no curto, médio e longo prazo.</p>
+              <p>Você deixa de depender da própria energia para crescer.<br/>Você passa a operar dentro de um sistema que se retroalimenta.</p>
+              <p>Escalar deixa de ser vender mais.<br/>Passa a ser estruturar legado.</p>
             </div>
           </div>
           <div className="relative h-[50vh] md:h-full">

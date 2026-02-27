@@ -18,7 +18,13 @@ export default function Audience() {
             </p>
             
             <div className="space-y-4 max-w-md">
-              {["Já são autoridade", "Já têm clientes", "Já faturam", "Mas querem escalar sem exaustão"].map((item, i) => (
+              {[
+                "Já validaram seu posicionamento no mercado",
+                "Já têm clientes pagantes e autoridade construída",
+                "Já faturam de forma consistente",
+                "Mas sentem que o modelo atual chegou no limite",
+                "E estão prontas para transformar faturamento em legado"
+              ].map((item, i) => (
                 <div key={i} className="border border-venus-black rounded-xl px-6 py-4 bg-white/50 shadow-sm">
                   <span className="font-body text-lg md:text-xl font-medium text-venus-black">{item}</span>
                 </div>
@@ -49,17 +55,21 @@ export default function Audience() {
             <h2 className="font-display text-4xl md:text-6xl mb-8 uppercase">E SABEM QUE:</h2>
             
             <div className="space-y-4">
-              {mindset_shift_12.points.map((point: string, i: number) => (
+              {[
+                "Podem faturar mais do que estão faturando hoje",
+                "Não nasceram para depender de lançamentos",
+                "Grupo e comunidade são ativos de escala",
+                "O presencial cria autoridade que o digital não sustenta sozinho",
+                "Esforço sem estrutura não gera liberdade",
+                "O verdadeiro tesouro está na construção de longo prazo"
+              ].map((point, i) => (
                 <div key={i} className="border border-venus-black rounded-full px-8 py-3 text-center hover:bg-venus-black hover:text-white transition-colors cursor-default">
                   <span className="font-condensed uppercase tracking-widest text-sm">{point}</span>
                 </div>
               ))}
-              <div className="border border-venus-black rounded-full px-8 py-3 text-center hover:bg-venus-black hover:text-white transition-colors cursor-default">
-                 <span className="font-condensed uppercase tracking-widest text-sm">O maior tesouro está no longo prazo</span>
-              </div>
             </div>
             
-            <div className="mt-12 text-right">
+            <div className="mt-12 text-center">
               <p className="font-condensed text-sm uppercase tracking-wide">
                 Esse chamado não é para quem está começando.<br/>
                 <span className="font-bold">É para quem já construiu e agora quer escalar com liberdade.</span>

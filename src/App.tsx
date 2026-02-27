@@ -1,4 +1,5 @@
 import Audience from "./components/Audience";
+import { CalendarSection } from "./components/CalendarSection";
 import Ecosystem from "./components/Ecosystem";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -21,6 +22,7 @@ export default function App() {
       <Ecosystem />
       <Offer />
       <SocialProof />
+      <CalendarSection />
       <Footer />
     </main>
   );

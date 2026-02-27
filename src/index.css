@@ -16,13 +16,14 @@
   font-display: swap;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=HK+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=HK+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@300;400;500;600&family=Anton&display=swap');
 
 @theme {
   --font-display: "Palash", serif;
   --font-script: "Gentlemens Script", cursive;
   --font-body: "HK Grotesk", sans-serif;
   --font-condensed: "IBM Plex Sans Condensed", sans-serif;
+  --font-anton: "Anton", sans-serif;
 
   --color-venus-black: #000000;
   --color-venus-bg: #F5F5F5;
