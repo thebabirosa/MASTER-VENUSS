@@ -84,8 +84,8 @@ export default function ProblemSolution() {
 
       {/* The Problem (Image 4) */}
       <Section id="problem" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
-          <div className="relative h-[50vh] md:h-full order-1 md:order-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
+          <div className="relative min-h-[50vh] md:min-h-full order-1 md:order-1">
             <img 
               src="https://github.com/thebabirosa/images/blob/main/MASTER.png?raw=true" 
               alt="Woman with papers" 
@@ -133,33 +133,52 @@ export default function ProblemSolution() {
       </Section>
 
       {/* Market Critique (Image 5) */}
-      <Section id="critique" className="bg-[#F5F5F5]">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="flex justify-center">
-             {/* Sun Symbol Placeholder */}
-             <div className="w-64 h-64 md:w-96 md:h-96 relative">
+      <Section id="critique" className="bg-[#F5F5F5] py-20 md:py-32">
+        <div className="text-center mb-16">
+          <p className="font-script text-4xl md:text-5xl mb-4">O Mercado Vende Fórmulas.</p>
+          <h2 className="font-display text-3xl md:text-5xl uppercase leading-tight max-w-4xl mx-auto">
+            VOCÊ PRECISA DE UMA ARQUITETURA DE NEGÓCIO ESCALÁVEL.
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div className="flex justify-center order-1 md:order-1">
+             {/* Sun Symbol */}
+             <div className="w-full max-w-md relative">
                <img 
-                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Sun_symbol_of_Shamash.svg/1200px-Sun_symbol_of_Shamash.svg.png" 
+                 src="https://github.com/thebabirosa/images/blob/main/MASTER%20(1).png?raw=true" 
                  alt="Sun Symbol" 
-                 className="w-full h-full object-contain opacity-80 sepia"
+                 className="w-full h-auto object-contain"
                />
              </div>
           </div>
-          <div>
-            <p className="font-script text-3xl mb-4">O Mercado Vende Fórmulas.</p>
-            <h2 className="font-display text-4xl md:text-6xl mb-8 uppercase leading-tight">
-              VOCÊ PRECISA DE UMA ARQUITETURA DE NEGÓCIO ESCALÁVEL.
-            </h2>
-            <div className="space-y-4 font-condensed text-sm uppercase tracking-widest text-venus-muted">
+          
+          <div className="space-y-8 order-2 md:order-2 font-body text-venus-black">
+            <div className="space-y-2">
               <p>Você já investiu nos maiores players do mercado.</p>
               <p>E não teve os resultados que esperava.</p>
               <p>Já fez lançamentos caros.</p>
               <p>Já aumentou a equipe.</p>
+              <p>Já investiu em treinamentos e mentorias.</p>
+              <p>E mesmo assim, continua no platô de faturamento e crescimento.</p>
             </div>
-            <div className="mt-8 border-l-2 border-venus-black pl-6">
-              <p className="font-condensed font-bold uppercase mb-2">Mas a verdade é que:</p>
-              <p className="font-condensed text-sm uppercase tracking-wide mb-4">
-                {market_critique_05.truth_statement}
+
+            <div className="space-y-2 pt-4">
+              <p>Talvez você tenha perdido a fé no digital.</p>
+              <p>Talvez esteja frustrada, desconfiada e busque por garantias.</p>
+            </div>
+
+            <div className="pt-6">
+              <p className="font-bold mb-2">Mas a verdade é que:</p>
+              <p>
+                A previsibilidade, legado e liberdade não nascem de fórmulas, nascem de estrutura.
+              </p>
+            </div>
+
+            <div className="pt-4">
+              <p className="font-bold mb-2">Fórmula gera pico.</p>
+              <p>
+                Modelo escalável e estruturado sustenta, constroi riqueza, crescimento e gera legado com previsibilidade e lucro.
               </p>
             </div>
           </div>
@@ -167,20 +186,58 @@ export default function ProblemSolution() {
       </Section>
 
       {/* Process Limiting (Image 6) */}
-      <Section id="process" className="bg-white">
-        <h2 className="font-display text-3xl md:text-5xl text-center mb-4 uppercase max-w-5xl mx-auto leading-tight">
-          O MERCADO ESTÁ CHEIO DE PROMESSAS MILAGROSAS, <span className="font-script lowercase text-4xl block mt-2">mas ainda sim tem negócios escalando sem exaustão.</span>
-        </h2>
+      <Section id="process" className="bg-[#F9F9F9] py-20 md:py-32">
+        <div className="text-center mb-16 max-w-5xl mx-auto">
+          <h2 className="font-display text-3xl md:text-5xl uppercase leading-tight mb-4">
+            O MERCADO ESTÁ CHEIO DE PROMESSAS MILAGROSAS, <span className="font-script lowercase text-4xl md:text-5xl block mt-2">mas ainda sim tem negócios escalando sem exaustão.</span>
+          </h2>
+          <p className="font-body text-lg text-venus-black mt-8">
+            Existe um caminho de estruturação para isso, mas<br />
+            antes você tem que romper suas próprias limitações:
+          </p>
+        </div>
         
-        <div className="mt-20 flex flex-col md:flex-row justify-center items-center gap-0 md:gap-0 relative">
-          {process_limiting_06.flow.map((step: string, i: number) => (
-            <div key={i} className="flex flex-col md:flex-row items-center relative z-10">
-              <div className="w-40 h-40 rounded-full border border-venus-black bg-white flex items-center justify-center text-center p-4 transition-all duration-300 hover:bg-venus-black hover:text-white group">
-                <span className="font-condensed font-bold uppercase text-xs tracking-widest group-hover:scale-105 transition-transform">{step}</span>
+        <div className="flex flex-col md:flex-row justify-center items-start gap-4 md:gap-0 relative max-w-7xl mx-auto px-4">
+          {[
+            {
+              title: "DESEJO RESULTADO",
+              description: "ESCALAR, CONSTRUIR LEGADO, MAIS LUCRO, IMPACTO."
+            },
+            {
+              title: "IDENTIDADE",
+              description: "INVESTIU EM GRANDES PLAYERS E SE FRUSTROU, PERDEU A FÉ."
+            },
+            {
+              title: "COMPORTAMENTO",
+              description: "NÃO ARRISCA POR MEDO DE REPETIR A FRUSTRAÇÃO E QUER GARANTIAS"
+            },
+            {
+              title: "DESCONFORTO",
+              description: "NEGÓCIO SE MANTÉM ENGESSADO, CUSTOSS FIXOS ALTOS, MARGEM BAIXA."
+            },
+            {
+              title: "RECOMPENSA",
+              description: "PLATÔ DE RESULTADOS, SEM LEGADO, COM CUSTOS FIXOS ALTOS."
+            }
+          ].map((step, i) => (
+            <div key={i} className="relative flex-1 w-full md:w-auto">
+              <div className={`
+                w-full aspect-square rounded-full border border-venus-black bg-white 
+                flex flex-col items-center justify-center text-center p-2
+                relative z-10 -ml-4 first:ml-0 md:-ml-8 md:first:ml-0
+                hover:z-20 transition-all duration-300
+              `}>
+                <div className="h-1/2 w-full flex items-end justify-center pb-4 border-b border-venus-black">
+                  <h3 className="font-display font-bold text-sm md:text-base uppercase tracking-wide px-4">
+                    {step.title}
+                  </h3>
+                </div>
+                <div className="h-1/2 w-full flex items-start justify-center pt-4">
+                  <p className="font-condensed text-xs md:text-sm uppercase tracking-wider px-6 leading-tight">
+                    {step.description}
+                  </p>
+                </div>
               </div>
-              {i < process_limiting_06.flow.length - 1 && (
-                <div className="h-12 w-[1px] md:h-[1px] md:w-12 bg-venus-black" />
-              )}
             </div>
           ))}
         </div>
