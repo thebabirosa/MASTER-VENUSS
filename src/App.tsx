@@ -7,11 +7,13 @@ import Offer from "./components/Offer";
 import Philosophy from "./components/Philosophy";
 import ProblemSolution from "./components/ProblemSolution";
 import SocialProof from "./components/SocialProof";
+import WealthBuilding from "./components/WealthBuilding";
 
 export default function App() {
   return (
     <main className="bg-venus-bg min-h-screen overflow-x-hidden selection:bg-venus-gold selection:text-white">
       <Hero />
+      <WealthBuilding />
       <ProblemSolution />
       <Philosophy />
       <Audience />

@@ -57,9 +57,12 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
+          whileHover={{ scale: 1.05 }}
+          className="relative group z-20"
         >
+          <div className="absolute -inset-1 bg-gradient-to-r from-venus-gold to-[#D4AF37] rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
           <Button 
-            className="bg-white text-venus-black hover:bg-gray-100 px-8 py-4 text-sm tracking-widest font-bold uppercase shadow-lg"
+            className="relative !bg-white !text-venus-black border-2 border-venus-gold hover:!bg-venus-gold hover:!text-white px-10 py-5 text-base tracking-[0.2em] font-bold uppercase shadow-2xl transition-all duration-300"
           >
             QUERO ME TORNAR ALIADA FUNDADORA
           </Button>

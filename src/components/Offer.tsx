@@ -9,178 +9,119 @@ export default function Offer() {
 
   return (
     <>
-      {/* Stakes (Image 19) */}
-      <Section id="stakes" className="bg-[#F5F5F5] min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-10">
-           <img 
-             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop" 
-             alt="Texture" 
-             className="w-full h-full object-cover"
-           />
-        </div>
-        
-        <div className="relative z-10 text-center max-w-3xl mx-auto">
-          <h2 className="font-display text-4xl md:text-5xl mb-4 uppercase">O QUE ESTÁ EM JOGO?</h2>
-          <p className="font-condensed text-sm mb-8 max-w-2xl mx-auto">
-            Você pode continuar sustentando um modelo que depende de você, sem liberdade e com esforço e fragilidade.<br/><br/>
-            Ou pode construir um ecossistema escalável, lucrativo, previsível, que gera legado e que sustenta você.
-          </p>
-          
-          <p className="font-condensed text-sm mb-4">Riqueza não é só faturamento.</p>
-          <p className="font-script text-4xl mb-8">Riqueza é:</p>
-          
-          <div className="space-y-4">
-            {["Liberdade", "Tempo de qualidade", "Paz de espírito", "Construir Legado"].map((item, i) => (
-              <div key={i} className="border border-venus-black rounded-lg px-12 py-3 bg-white/50 backdrop-blur-sm hover:bg-venus-black hover:text-white transition-colors cursor-default">
-                <span className="font-condensed uppercase tracking-widest text-sm">{item}</span>
-              </div>
-            ))}
-          </div>
-          
-          <p className="mt-12 font-condensed text-sm uppercase tracking-wide">
-            O Mastermind VÊNUS é a estrutura para isso.
-          </p>
-        </div>
-      </Section>
-
-      {/* CTA (Image 20) */}
-      <Section id="cta" className="relative min-h-screen flex items-center justify-end overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=2070&auto=format&fit=crop"
-            alt="CTA Background"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        
-        <div className="absolute top-1/2 left-20 -translate-y-1/2 hidden md:block">
-           <div className="flex flex-col items-start">
-              <img 
-                src="https://github.com/thebabirosa/images/blob/main/idv%20venus%20master.png?raw=true" 
-                alt="O Círculo de Vênus Mastermind" 
-                className="w-64 md:w-80 h-auto object-contain brightness-0 invert"
-              />
+      {/* Stakes (Image 19) - Replaced with new layout as requested */}
+      <Section id="stakes" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
+          <div className="flex flex-col justify-center p-12 md:p-24 bg-white text-center">
+            <h2 className="font-display text-4xl md:text-5xl mb-8 text-venus-black uppercase">O QUE ESTÁ EM JOGO?</h2>
+            
+            <div className="space-y-6 font-body text-lg text-venus-black mb-12 max-w-xl mx-auto">
+              <p>Você pode continuar sustentando um modelo que depende de você, sem liberdade e com esforço e fragilidade.</p>
+              <p>Ou pode construir um ecossistema escalável, lucrativo, previsível, que ger legado e que sustenta você.</p>
             </div>
-        </div>
-
-        <div className="relative z-10 bg-white p-12 md:p-16 max-w-md mr-0 md:mr-20 shadow-xl">
-          <div className="text-center space-y-4 mb-8">
-            <p className="font-condensed text-sm">Se você já tem clientes</p>
-            <p className="font-condensed text-sm">já tem ticket</p>
-            <p className="font-condensed text-sm">já tem autoridade</p>
-            <p className="font-condensed text-sm mt-4">Então talvez o próximo nível<br/>não seja vender mais.</p>
-            <p className="font-condensed text-sm mt-4">Seja estruturar.<br/>Escalar com inteligência.<br/>Sem exaustão.<br/>Com legado.</p>
+            
+            <p className="font-body text-xl text-venus-black mb-2">Riqueza não é só faturamento.</p>
+            <p className="font-script text-5xl text-venus-black mb-8">Riqueza é:</p>
+            
+            <div className="space-y-3 max-w-md mx-auto w-full mb-12">
+              {["Liberdade", "Tempo de qualidade", "Paz de espírito", "Construir Legado"].map((item, i) => (
+                <div key={i} className="border border-venus-black rounded-xl px-6 py-3 bg-white shadow-sm">
+                  <span className="font-body text-xl font-medium text-venus-black">{item}</span>
+                </div>
+              ))}
+            </div>
+            
+            <p className="font-body text-xl font-medium text-venus-black">
+              O Mastermind VÊNUS é a estrutura para isso.
+            </p>
           </div>
-          
-          <p className="text-center font-condensed text-xs uppercase tracking-widest mb-6">
-            O Círculo de VÊNUS está aberto. 🔥
-          </p>
-          
-          <Button className="w-full bg-[#B08D55] text-white hover:bg-[#9A7B4A]">
-            APLICAR AGORA
-          </Button>
+          <div className="relative h-[50vh] md:h-full">
+            <img
+              src="https://github.com/thebabirosa/images/blob/main/14.png?raw=true"
+              alt="O que está em jogo"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
         </div>
       </Section>
 
-      {/* Deliverables (Image 21) */}
-      <Section id="deliverables" className="bg-[#F9F9F9]">
+      {/* CTA (Image 20) - Replaced with full image as requested */}
+      <Section id="cta" className="relative h-screen md:h-[120vh] p-0 max-w-none w-full overflow-hidden">
+        <img
+          src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(9).png?raw=true"
+          alt="CTA"
+          className="w-full h-full object-cover"
+        />
+      </Section>
+
+      {/* Deliverables (Image 21) - Replaced with full image as requested */}
+      <Section id="deliverables" className="relative h-screen md:h-[120vh] p-0 max-w-none w-full overflow-hidden">
+        <img
+          src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(10).png?raw=true"
+          alt="Deliverables"
+          className="w-full h-full object-cover"
+        />
+      </Section>
+
+      {/* Bonus (Image 22) - Replaced with full image as requested */}
+      <Section id="bonus" className="relative h-screen md:h-[120vh] p-0 max-w-none w-full overflow-hidden">
+        <img
+          src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(11).png?raw=true"
+          alt="Bonus"
+          className="w-full h-full object-cover"
+        />
+      </Section>
+
+      {/* Investment (Image 23) - Replaced with "Aliadas Fundadoras" Bonus Layout as requested */}
+      <Section id="investment" className="bg-white py-20 px-6 max-w-7xl mx-auto w-full">
         <div className="text-center mb-16">
-          <h2 className="font-display text-3xl md:text-5xl uppercase leading-tight">
-            AO ENTRAR NO CÍRCULO DE<br/>VÊNUS VOCÊ RECEBE:
-          </h2>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {[
-            { title: "Acesso integral ao Clube Mulher de Negócios (12 meses)", img: "https://picsum.photos/seed/d1/400/300" },
-            { title: "12 Hotseats online e ao vivo - acompanhamento e aceleração", img: "https://picsum.photos/seed/d2/400/300" },
-            { title: "4 Encontros Individuais anuais - com plano de ação 90 dias", img: "https://picsum.photos/seed/d3/400/300" },
-            { title: "Grupo fechado exclusivo para líderes - acesso e ambiência de líderes", img: "https://picsum.photos/seed/d4/400/300" },
-            { title: "1 Imersão presencial exclusiva por ano - Mansão de Vênus", img: "https://picsum.photos/seed/d5/400/300" },
-            { title: "plano de implementação personalizado", img: "https://picsum.photos/seed/d6/400/300" }
-          ].map((item, i) => (
-            <div key={i} className="bg-white rounded-xl border border-gray-200 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-full h-40 overflow-hidden rounded-lg mb-4">
-                <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
-              </div>
-              <p className="font-condensed font-bold text-sm uppercase">{item.title}</p>
-            </div>
-          ))}
-        </div>
-      </Section>
-
-      {/* Bonus (Image 22) */}
-      <Section id="bonus" className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070&auto=format&fit=crop"
-            alt="Bonus Background"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        
-        <div className="relative z-10 bg-white p-12 md:p-16 max-w-2xl text-center shadow-2xl">
-          <h2 className="font-display text-4xl md:text-5xl uppercase mb-2">BÔNUS EXCLUSIVO DE</h2>
-          <h2 className="font-display text-4xl md:text-5xl uppercase mb-6">PRÉ-LANÇAMENTO</h2>
-          
-          <p className="font-condensed text-lg mb-8">
-            As 5 primeiras aliadas venusians receberão:
-          </p>
-          
-          <div className="mb-8">
-            <p className="font-display text-xl uppercase leading-tight">
-              ✓ Acesso integral aos eventos institucionais do Clube Mulher de Negócios realizados em 2025
+          <div className="relative inline-block mb-8">
+            <h2 className="font-display text-4xl md:text-6xl text-venus-black uppercase tracking-tight">
+              BÔNUS EXCLUSIVO
+            </h2>
+            <p className="font-script text-6xl md:text-8xl text-venus-black absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap">
+              Aliadas fundadoras
             </p>
           </div>
           
-          <p className="font-condensed text-lg">
-            Valor estimado dessas experiências ao longo do ano: R$ 3.500 por 00,00
+          <div className="mt-16 space-y-2">
+            <p className="font-body text-xl md:text-2xl text-venus-black">
+              As 5 primeiras aliadas venusians receberão:
+            </p>
+            <p className="font-body text-xl md:text-2xl font-bold text-venus-black">
+              ✓ Acesso integral aos eventos institucionais do Clube Mulher de Negócios realizados em 2025
+            </p>
+            <p className="font-body text-xl md:text-2xl text-venus-black">
+              Valor estimado dessas experiências ao longo do ano: R$ 3.500 por 00,00
+            </p>
+          </div>
+        </div>
+
+        {/* Gallery Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
+          {[1, 2, 3, 4, 5, 6].map((i) => (
+            <div key={i} className="relative aspect-[9/16] rounded-2xl overflow-hidden group shadow-lg">
+              <img
+                src={`https://picsum.photos/seed/event-${i}/400/711`}
+                alt={`Event ${i}`}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-white/30 backdrop-blur-md flex items-center justify-center border border-white/50">
+                  <div className="w-0 h-0 border-t-[8px] border-t-transparent border-l-[12px] border-l-white border-b-[8px] border-b-transparent ml-1" />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center space-y-1">
+          <p className="font-body text-sm text-venus-muted">
+            Eventos sujeitos à realização mediante número mínimo de participantes.*
           </p>
-          
-          <p className="mt-8 text-[10px] text-gray-500 uppercase">
-            Eventos sujeitos à realização mediante número mínimo de participantes.*<br/>
+          <p className="font-body text-sm text-venus-muted">
             Não inclui experiências premium extraordinárias ou viagens internacionais.*
           </p>
-        </div>
-      </Section>
-
-      {/* Investment (Image 23) */}
-      <Section id="investment" className="relative min-h-screen flex items-center justify-end overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=2070&auto=format&fit=crop"
-            alt="Investment Background"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        
-        <div className="absolute top-1/2 left-20 -translate-y-1/2 hidden md:block">
-           <div className="flex flex-col items-start">
-              <img 
-                src="https://github.com/thebabirosa/images/blob/main/idv%20venus%20master.png?raw=true" 
-                alt="O Círculo de Vênus Mastermind" 
-                className="w-64 md:w-80 h-auto object-contain brightness-0 invert"
-              />
-            </div>
-        </div>
-
-        <div className="relative z-10 bg-white p-12 md:p-16 max-w-md mr-0 md:mr-20 shadow-xl text-center">
-          <h2 className="font-display text-4xl md:text-5xl uppercase mb-8">INVESTIMENTO:</h2>
-          
-          <p className="font-condensed font-bold text-sm mb-2">
-            Oferta especial de pré-lançamento para as aliadas fundadoras:
-          </p>
-          <p className="font-condensed text-sm mb-8">
-            Investimento anual oficial: R$ 30.000
-          </p>
-          
-          <p className="font-condensed text-sm mb-8 leading-relaxed">
-            Faça sua aplicação e acesse a condição especial de pré-lançamento e torne-se uma aliada fundadora do circulo de vênus.
-          </p>
-          
-          <Button className="w-full bg-[#B08D55] text-white hover:bg-[#9A7B4A]">
-            APLICAR AGORA
-          </Button>
         </div>
       </Section>
     </>

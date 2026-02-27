@@ -8,32 +8,35 @@ export default function Methodology() {
 
   return (
     <>
-      {/* Methodology - Spheres (Image 13) */}
-      <Section id="methodology" className="bg-[#F9F9F9]">
-        <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-6xl uppercase mb-2">O MÉTODO VÊNUS É</h2>
-          <h2 className="font-display text-4xl md:text-6xl uppercase mb-4">ESTRUTURADO EM TRÊS ESFERAS:</h2>
-          <p className="font-script text-3xl md:text-4xl text-venus-black">Como construímos liberdade, lucro e previsibilidade</p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            { title: "1. MARCA FORTE", img: "https://picsum.photos/seed/m1/400/300", desc: ["Marca pessoal forte.", "Posicionamento magnético.", "Liderança de movimento.", "Narrativa de vendas."] },
-            { title: "2. ECOSSISTEMA LUCRATIVO", img: "https://picsum.photos/seed/m2/400/300", desc: ["Produto de escala:", "pertencimento e educação.", "Esteira de produtos lucrativos.", "Criação de Comunidades.", "Criação de eventos presenciais."] },
-            { title: "3. ESCALA E LEGADO", img: "https://picsum.photos/seed/m3/400/300", desc: ["Canais de aquisição previsíveis.", "Vendas sistêmicas.", "Funis de vendas", "Tecnologia, automação e ferramentas."] }
-          ].map((sphere, i) => (
-            <div key={i} className="bg-white border border-gray-200 p-6 text-center shadow-sm">
-              <h3 className="font-display text-2xl md:text-3xl mb-4 uppercase">{sphere.title}</h3>
-              <div className="w-full h-48 overflow-hidden mb-6">
-                <img src={sphere.img} alt={sphere.title} className="w-full h-full object-cover grayscale" />
-              </div>
-              <ul className="space-y-2">
-                {sphere.desc.map((item, j) => (
-                  <li key={j} className="font-condensed text-sm uppercase tracking-wide text-venus-muted">{item}</li>
-                ))}
-              </ul>
+      {/* Methodology - Spheres (Image 13) - Replaced with "PARA QUEM NÃO É" as requested */}
+      <Section id="methodology" className="bg-[#F4F4F4] py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
+          <div className="flex flex-col justify-center p-12 md:p-24 bg-[#F4F4F4]">
+            <h2 className="font-display text-4xl md:text-6xl mb-4 text-venus-black">PARA QUEM NÃO É:</h2>
+            <p className="font-body text-xl md:text-2xl mb-8 font-semibold text-venus-black">
+              Somos uma aceleradora estratégica para líderes que:
+            </p>
+            
+            <div className="space-y-4 max-w-md">
+              {[
+                "Já são autoridade",
+                "Já têm clientes",
+                "Já faturam",
+                "Mas querem escalar sem exaustão"
+              ].map((item, i) => (
+                <div key={i} className="border border-venus-black rounded-xl px-6 py-4 bg-white/50 shadow-sm">
+                  <span className="font-body text-lg md:text-xl font-medium text-venus-black">{item}</span>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+          <div className="relative h-[50vh] md:h-full">
+            <img
+              src="https://github.com/thebabirosa/images/blob/main/9.png?raw=true"
+              alt="Not for who"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
         </div>
       </Section>
 
@@ -55,7 +58,7 @@ export default function Methodology() {
           </div>
           <div className="relative h-[50vh] md:h-full">
             <img
-              src="https://images.unsplash.com/photo-1576504677634-06b2130bd1f3?q=80&w=1974&auto=format&fit=crop"
+              src="https://github.com/thebabirosa/images/blob/main/10.png?raw=true"
               alt="Transformation"
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -68,7 +71,7 @@ export default function Methodology() {
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
           <div className="relative h-[50vh] md:h-full order-2 md:order-1">
             <img
-              src="https://images.unsplash.com/photo-1548586196-aa5803b77379?q=80&w=1974&auto=format&fit=crop"
+              src="https://github.com/thebabirosa/images/blob/main/11.png?raw=true"
               alt="Future Vision"
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -119,7 +122,7 @@ export default function Methodology() {
           </div>
           <div className="relative h-[50vh] md:h-full">
             <img
-              src="https://images.unsplash.com/photo-1502163140606-888448ae8cfe?q=80&w=2070&auto=format&fit=crop"
+              src="https://github.com/thebabirosa/images/blob/main/12.png?raw=true"
               alt="Automatic Demand"
               className="absolute inset-0 w-full h-full object-cover"
             />
