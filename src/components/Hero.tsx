@@ -34,9 +34,9 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="mb-6"
+          className="mb-6 max-w-3xl mx-auto"
         >
-          <h1 className="font-script text-5xl md:text-7xl text-venus-black leading-tight">
+          <h1 className="font-script text-5xl md:text-7xl text-venus-black leading-[0.85]">
             Construa riqueza e<br />legado sem exaustão.
           </h1>
         </motion.div>
@@ -45,7 +45,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="mb-12 max-w-2xl"
+          className="mb-12 max-w-2xl mx-auto"
         >
           <p className="font-body text-lg md:text-xl text-venus-black leading-relaxed">
             através de uma marca forte, um ecossistema<br className="hidden md:block" />

@@ -9,10 +9,10 @@ export default function Audience() {
   return (
     <>
       {/* Target Audience (Image 11) */}
-      <Section id="audience" className="bg-[#F4F4F4] py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
+      <Section id="audience" className="bg-[#F4F4F4]" fullWidth>
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
           <div className="flex flex-col justify-center p-12 md:p-24 bg-[#F4F4F4]">
-            <h2 className="font-display text-4xl md:text-6xl mb-4 text-venus-black">PARA QUEM É:</h2>
+            <h2 className="font-display text-3xl md:text-5xl mb-4 text-venus-black">PARA QUEM É:</h2>
             <p className="font-body text-xl md:text-2xl mb-8 font-semibold text-venus-black">
               Somos uma aceleradora estratégica para líderes que:
             </p>
@@ -42,7 +42,7 @@ export default function Audience() {
       </Section>
 
       {/* Mindset Shift (Image 12) */}
-      <Section id="mindset" className="bg-[#F5F5F5] py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
+      <Section id="mindset" className="bg-[#F5F5F5]" fullWidth>
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
           <div className="relative h-[50vh] md:h-full order-2 md:order-1">
             <img
@@ -52,7 +52,7 @@ export default function Audience() {
             />
           </div>
           <div className="flex flex-col justify-center p-12 md:p-24 bg-[#F5F5F5] order-1 md:order-2">
-            <h2 className="font-display text-4xl md:text-6xl mb-8 uppercase">E SABEM QUE:</h2>
+            <h2 className="font-display text-3xl md:text-5xl mb-8 uppercase">E SABEM QUE:</h2>
             
             <div className="space-y-4">
               {[
