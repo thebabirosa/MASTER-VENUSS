@@ -44,16 +44,9 @@ export default function ProblemSolution() {
       </Section>
 
       {/* The Problem (Image 4) */}
-      <Section id="problem" className="bg-[#3D2B1F] py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
+      <Section id="problem" className="bg-[#3c2d23]" fullWidth>
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
-          <div className="relative min-h-[50vh] md:min-h-full order-1 md:order-1">
-            <img 
-              src="https://github.com/thebabirosa/images/blob/main/4.png?raw=true" 
-              alt="Woman in desert" 
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          </div>
-          <div className="flex flex-col justify-center p-12 md:p-24 bg-[#3D2B1F] order-2 md:order-2 text-white">
+          <div className="flex flex-col justify-center p-12 md:p-24 bg-[#3c2d23] order-2 md:order-1 text-white">
             <div className="mb-12">
               <h2 className="font-display text-4xl md:text-5xl uppercase leading-none mb-2 tracking-wide">
                 O PROBLEMA NÃO É VOCÊ,
@@ -95,20 +88,20 @@ export default function ProblemSolution() {
               </p>
             </div>
           </div>
+          <div className="relative min-h-[50vh] md:min-h-full order-1 md:order-2">
+            <img 
+              src="https://raw.githubusercontent.com/thebabirosa/images/refs/heads/main/4.png" 
+              alt="Woman in desert" 
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
         </div>
       </Section>
 
       {/* Market Critique (Image 5) */}
-      <Section id="critique" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
+      <Section id="critique" className="bg-[#f6f6f6]" fullWidth>
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
-          <div className="relative min-h-[50vh] md:min-h-full">
-            <img 
-              src="https://github.com/thebabirosa/images/blob/main/5.png?raw=true" 
-              alt="Classical Painting" 
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          </div>
-          <div className="flex flex-col justify-center p-12 md:p-24 bg-white text-venus-black">
+          <div className="flex flex-col justify-center p-12 md:p-24 bg-[#f6f6f6] text-venus-black order-2 md:order-1">
             <div className="max-w-xl space-y-12">
               <div className="space-y-4">
                 <h2 className="font-body text-3xl md:text-4xl font-bold leading-tight">
@@ -151,11 +144,18 @@ export default function ProblemSolution() {
               </div>
             </div>
           </div>
+          <div className="relative min-h-[50vh] md:min-h-full order-1 md:order-2">
+            <img 
+              src="https://github.com/thebabirosa/images/blob/main/5.png?raw=true" 
+              alt="Classical Painting" 
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
         </div>
       </Section>
 
       {/* Process Limiting (Image 6) */}
-      <Section id="process" className="bg-[#D2C9BD] py-0 md:py-0 px-0 md:px-0 max-w-none w-full overflow-hidden">
+      <Section id="process" className="bg-[#D2C9BD] overflow-hidden" fullWidth>
         <div className="relative w-full min-h-[60vh] md:min-h-screen flex items-center justify-center">
           <img 
             src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(7).png?raw=true" 

@@ -9,7 +9,7 @@ export default function Philosophy() {
   return (
     <>
       {/* Process Evolution (Image 7) */}
-      <Section id="evolution" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
+      <Section id="evolution" className="bg-white" fullWidth>
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
           <div className="flex flex-col justify-center p-12 md:p-24 bg-white relative overflow-hidden">
             {/* Background Image */}
@@ -63,7 +63,7 @@ export default function Philosophy() {
       </Section>
 
       {/* Feminine Wealth (Image 8) */}
-      <Section id="feminine_wealth" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full overflow-hidden">
+      <Section id="feminine_wealth" className="bg-white overflow-hidden" fullWidth>
         <div className="relative w-full min-h-[60vh] md:min-h-screen flex items-center justify-center">
           <img 
             src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(8).png?raw=true" 
@@ -128,7 +128,7 @@ export default function Philosophy() {
       </Section>
 
       {/* Mastermind Focus (Image 10) - Replaced with Magnetism & Personal Power */}
-      <Section id="focus" className="relative min-h-screen flex items-center justify-center overflow-hidden py-20">
+      <Section id="focus" className="relative min-h-screen flex items-center justify-center overflow-hidden py-20" fullWidth>
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
