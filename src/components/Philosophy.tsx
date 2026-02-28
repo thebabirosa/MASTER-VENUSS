@@ -62,16 +62,7 @@ export default function Philosophy() {
         </div>
       </Section>
 
-      {/* Feminine Wealth (Image 8) */}
-      <Section id="feminine_wealth" className="bg-white overflow-hidden" fullWidth>
-        <div className="relative w-full min-h-[60vh] md:min-h-screen flex items-center justify-center">
-          <img 
-            src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(8).png?raw=true" 
-            alt="O que você acessa como aliada" 
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </Section>
+
 
       {/* Definition Scale (Image 9) - Replaced with Three Pillars as requested */}
       <Section id="scale" className="bg-[#F5F5F5] py-20 md:py-32">

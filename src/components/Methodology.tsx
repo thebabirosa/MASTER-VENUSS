@@ -19,10 +19,11 @@ export default function Methodology() {
             
             <div className="space-y-4 max-w-md">
               {[
-                "Já são autoridade",
-                "Já têm clientes",
-                "Já faturam",
-                "Mas querem escalar sem exaustão"
+                "Ainda não validou produto ou modelo de negócio",
+                "Está buscando fórmula rápida",
+                "Quer aumentar faturamento sem estruturar base",
+                "Espera que alguém faça por ela",
+                "Quer crescer mantendo o mesmo modelo que já chegou no limite"
               ].map((item, i) => (
                 <div key={i} className="border border-venus-black rounded-xl px-6 py-4 bg-white hover:bg-venus-black hover:text-white transition-colors cursor-default shadow-sm">
                   <span className="font-body text-lg md:text-xl font-medium">{item}</span>
@@ -127,6 +128,64 @@ export default function Methodology() {
               className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
+        </div>
+      </Section>
+
+      {/* Investment (Image 23) - Replaced with "Aliadas Fundadoras" Bonus Layout as requested */}
+      <Section id="investment" className="bg-white py-20 px-6 max-w-7xl mx-auto w-full">
+        <div className="text-center mb-16">
+          <div className="relative inline-block mb-16">
+            <h2 className="font-display text-4xl md:text-6xl text-venus-black uppercase tracking-tight relative z-10">
+              BÔNUS EXCLUSIVO
+            </h2>
+            <p className="font-script text-6xl md:text-8xl text-venus-black absolute -bottom-10 md:-bottom-14 left-1/2 -translate-x-1/2 whitespace-nowrap z-20">
+              Aliadas fundadoras
+            </p>
+          </div>
+          
+          <div className="mt-16 space-y-2">
+            <p className="font-body text-xl md:text-2xl text-venus-black">
+              As 5 primeiras aliadas venusians receberão:
+            </p>
+            <p className="font-body text-xl md:text-2xl font-bold text-venus-black">
+              ✓ Acesso integral aos eventos institucionais do Clube Mulher de Negócios realizados em 2025
+            </p>
+            <p className="font-body text-xl md:text-2xl text-venus-black">
+              Valor estimado dessas experiências ao longo do ano: R$ 3.500 por 00,00
+            </p>
+          </div>
+        </div>
+
+        {/* Gallery Grid - YouTube Shorts */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
+          {[
+            "BB4GMXu5wGA",
+            "H-tHhUfcuWg",
+            "Q277sMT96OQ",
+            "aNj5sIG37_8",
+            "4-Beml51_BE",
+            "Q277sMT96OQ"
+          ].map((videoId, i) => (
+            <div key={i} className="relative aspect-[9/16] rounded-2xl overflow-hidden group shadow-lg bg-black">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src={`https://www.youtube.com/embed/${videoId}?loop=1&playlist=${videoId}&controls=0&rel=0`}
+                title={`YouTube Short ${i + 1}`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center space-y-1">
+          <p className="font-body text-sm text-venus-muted">
+            Eventos sujeitos à realização mediante número mínimo de participantes.*
+          </p>
+          <p className="font-body text-sm text-venus-muted">
+            Não inclui experiências premium extraordinárias ou viagens internacionais.*
+          </p>
         </div>
       </Section>
     </>

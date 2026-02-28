@@ -16,7 +16,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 w-full flex flex-col items-center text-center pt-32 md:pt-40 pb-32">
+      <div className="relative z-10 max-w-4xl mx-auto px-6 w-full flex flex-col items-center text-center pt-12 md:pt-20 pb-32">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -26,7 +26,7 @@ export default function Hero() {
           <img 
             src="https://github.com/thebabirosa/images/blob/main/idv%20venus%20master%20(1).png?raw=true" 
             alt="O Círculo de Vênus Mastermind" 
-            className="w-48 md:w-64 h-auto object-contain brightness-0"
+            className="w-32 md:w-48 h-auto object-contain brightness-0"
           />
         </motion.div>
 

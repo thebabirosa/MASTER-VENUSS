@@ -9,37 +9,48 @@ export default function ProblemSolution() {
   return (
     <>
       {/* Current State - Cards (Image 2) */}
-      <Section id="current_state" className="bg-[#F9F9F9]">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-          {current_state_02.cards.map((card: any, index: number) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2 }}
-              className="bg-white border border-gray-200 p-6 text-center shadow-sm hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-display text-2xl mb-4 uppercase tracking-wide">{card.title}</h3>
-              <div className="w-full mb-6">
-                 <img 
-                   src={[
-                     "https://github.com/thebabirosa/images/blob/main/1.png?raw=true",
-                     "https://github.com/thebabirosa/images/blob/main/2.png?raw=true",
-                     "https://github.com/thebabirosa/images/blob/main/3.png?raw=true"
-                   ][index]} 
-                   alt={card.title}
-                   className="w-full h-auto object-contain"
-                 />
-              </div>
-              <p className="font-condensed text-sm uppercase tracking-wider text-venus-muted">{card.subtitle}</p>
-            </motion.div>
-          ))}
+      <Section id="current_state" className="relative bg-[#F9F9F9] overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://github.com/thebabirosa/images/blob/main/PV%20MASTERMIND%20(9).jpg?raw=true"
+            alt="Background"
+            className="w-full h-full object-cover"
+          />
         </div>
-        <div className="text-center max-w-4xl mx-auto">
-          <p className="font-script text-4xl mb-4">E isso não é falta de capacidade.</p>
-          <p className="font-condensed text-sm uppercase tracking-widest text-venus-muted">
-            {current_state_02.footer_text}
-          </p>
+
+        <div className="relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            {current_state_02.cards.map((card: any, index: number) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.2 }}
+                className="bg-white border border-gray-200 p-6 text-center shadow-sm hover:shadow-md transition-shadow"
+              >
+                <h3 className="font-display text-2xl mb-4 uppercase tracking-wide">{card.title}</h3>
+                <div className="w-full mb-6">
+                   <img 
+                     src={[
+                       "https://github.com/thebabirosa/images/blob/main/1.png?raw=true",
+                       "https://github.com/thebabirosa/images/blob/main/2.png?raw=true",
+                       "https://github.com/thebabirosa/images/blob/main/3.png?raw=true"
+                     ][index]} 
+                     alt={card.title}
+                     className="w-full h-auto object-contain"
+                   />
+                </div>
+                <p className="font-condensed text-sm uppercase tracking-wider text-venus-muted">{card.subtitle}</p>
+              </motion.div>
+            ))}
+          </div>
+          <div className="text-center max-w-4xl mx-auto">
+            <p className="font-script text-4xl mb-4">E isso não é falta de capacidade.</p>
+            <p className="font-condensed text-sm uppercase tracking-widest text-venus-muted">
+              {current_state_02.footer_text}
+            </p>
+          </div>
         </div>
       </Section>
 

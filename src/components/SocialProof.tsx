@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { landingPageData } from "../data";
 import Section from "./Section";
 import Button from "./ui/Button";
+import { GalleryCarousel } from "./GalleryCarousel";
 
 export default function SocialProof() {
   const sections = landingPageData.sections.reduce((acc, section) => ({ ...acc, [section.id]: section }), {} as any);
@@ -18,56 +19,7 @@ export default function SocialProof() {
         />
       </Section>
 
-      {/* Calendar (Image 25) - Replaced with new layout as requested */}
-      <Section id="calendar" className="relative py-24 px-6 max-w-none w-full overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(1).png?raw=true"
-            alt="Calendar Background"
-            className="w-full h-full object-cover opacity-100"
-          />
-        </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-display text-4xl md:text-6xl text-venus-black uppercase tracking-tight">
-              CALENDÁRIO DE
-            </h2>
-            <p className="font-script text-5xl md:text-7xl text-venus-black">
-              eventos presenciais
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
-            {[
-              { month: "Fevereiro", event: "Imersão mulher de negócios O Renascimento", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/5-1-scaled.jpg" },
-              { month: "março", event: "MDN experiencie especial dia da mulher em alto mar.", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/6-1-scaled.jpg" },
-              { month: "abril", event: "MDN experience - business and wild. Passeio a cavalo na praia.", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/7-1-scaled.jpg" },
-              { month: "maio", event: "IMERSÃO MULHER DE NEGÓCIOS - 2 anos de club", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/8-1-scaled.jpg" },
-              { month: "junho", event: "MDN Experience - Business & wine. Pintura em taça e vinho", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/Design-sem-nome-1-1.jpg" },
-              { month: "julho", event: "• MDN Experience - Business & Wellness para empresárias", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/10-scaled.jpg" },
-              { month: "setembro", event: "Café de Negócios", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/11-scaled.jpg" },
-              { month: "outubro", event: "Viagem para europa investimento a parte", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/12-scaled.jpg" },
-              { month: "novembro", event: "Sunset de negócios Club MDN", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/13-scaled.jpg" }
-            ].map((item, i) => (
-              <div key={i} className="bg-white/80 backdrop-blur-sm rounded-3xl border border-venus-black/10 p-4 shadow-sm hover:shadow-md transition-all group">
-                <div className="w-full aspect-[4/3] overflow-hidden rounded-2xl mb-4">
-                  <img src={item.img} alt={item.month} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                </div>
-                <h3 className="font-script text-3xl text-venus-black mb-1">{item.month}</h3>
-                <p className="font-body text-[10px] text-venus-black uppercase leading-tight">{item.event}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="max-w-5xl mx-auto text-center">
-            <p className="font-body text-[10px] text-venus-muted leading-relaxed">
-              Essa é uma previsão anual de eventos. A confirmação oficial das datas será feita com os estabelecimentos e divulgada com 20 a 30 dias de antecedência de cada encontro. As datas podem sofrer alterações conforme a disponibilidade dos locais e a relevância dos temas para as aliadas. Este planejamento está sujeito a ajustes sem aviso prévio, sempre com o objetivo de oferecer a melhor experiência possível às participantes.
-            </p>
-          </div>
-        </div>
-      </Section>
 
       {/* Journey (Image 26) - Replaced with "A Sua Jornada" layout as requested */}
       <Section id="curriculum" className="relative py-24 px-6 max-w-none w-full overflow-hidden min-h-screen flex items-center">
@@ -401,6 +353,9 @@ export default function SocialProof() {
           </div>
         </div>
       </Section>
+      
+      {/* Gallery Carousel - New section as requested */}
+      <GalleryCarousel />
       {/* Legado & Impacto (Image 32) - New section as requested */}
       <Section id="legacy" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full border-t border-venus-black/5">
         <div className="grid grid-cols-1 md:grid-cols-12 h-auto md:min-h-screen">
@@ -474,54 +429,7 @@ export default function SocialProof() {
           </div>
         </div>
       </Section>
-      {/* Community Gallery (Image 33) - New section as requested */}
-      <Section id="community-gallery" className="bg-[#F8F7F9] py-16 md:py-24 px-4 md:px-8 max-w-none w-full">
-        <div className="max-w-[1400px] mx-auto">
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3 md:gap-4">
-            {/* Row 1: Members portraits */}
-            {[
-              "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2",
-              "https://images.unsplash.com/photo-1580489944761-15a19d654956",
-              "https://images.unsplash.com/photo-1567532939604-b6b5b0ad2f04",
-              "https://images.unsplash.com/photo-1551836022-d5d88e9218df",
-              "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91",
-              "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
-              "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
-              "https://images.unsplash.com/photo-1544005313-94ddf0286df2"
-            ].map((url, i) => (
-              <div key={`member-${i}`} className="aspect-[3/4.5] rounded-xl md:rounded-2xl overflow-hidden shadow-sm">
-                <img 
-                  src={`${url}?q=80&w=800&auto=format&fit=crop`} 
-                  alt="Vênus Member"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-            ))}
-            
-            {/* Row 2: Event moments (mix of color and grayscale) */}
-            {[
-              "https://images.unsplash.com/photo-1511795409834-ef04bbd61622",
-              "https://images.unsplash.com/photo-1505373877841-8d25f7d46678",
-              "https://images.unsplash.com/photo-1515187029135-18ee286d815b",
-              "https://images.unsplash.com/photo-1528605248644-14dd04022da1",
-              "https://images.unsplash.com/photo-1540575861501-7cf05a4b125a",
-              "https://images.unsplash.com/photo-1527529482837-4698179dc6ce",
-              "https://images.unsplash.com/photo-1511578314322-379afb476865",
-              "https://images.unsplash.com/photo-1523580494863-6f3031224c94"
-            ].map((url, i) => (
-              <div key={`event-${i}`} className={`aspect-[3/4.5] rounded-xl md:rounded-2xl overflow-hidden shadow-sm ${[1, 2, 3, 4, 5].includes(i) ? 'grayscale' : ''}`}>
-                <img 
-                  src={`${url}?q=80&w=800&auto=format&fit=crop`} 
-                  alt="Vênus Event"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </Section>
+
       {/* The Call (Image 35) - Updated with provided image */}
       <Section id="the-call" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
         <div className="w-full">

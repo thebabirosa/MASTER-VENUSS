@@ -55,22 +55,65 @@ export default function Offer() {
         </div>
       </Section>
 
-      {/* CTA (Image 20) - Replaced with full image as requested */}
-      <Section id="cta" className="relative h-screen md:h-[120vh] p-0 max-w-none w-full overflow-hidden" fullWidth>
-        <img
-          src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(9).png?raw=true"
-          alt="CTA"
-          className="w-full h-full object-cover block"
-        />
+      {/* Feminine Wealth (Image 8) - Moved from Philosophy as requested */}
+      <Section id="feminine_wealth" className="bg-white overflow-hidden" fullWidth>
+        <div className="relative w-full min-h-[60vh] md:min-h-screen flex items-center justify-center">
+          <img 
+            src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(8).png?raw=true" 
+            alt="O que você acessa como aliada" 
+            className="w-full h-full object-cover"
+          />
+        </div>
       </Section>
 
-      {/* Deliverables (Image 21) - Replaced with full image as requested */}
-      <Section id="deliverables" className="relative h-screen md:h-[120vh] p-0 max-w-none w-full overflow-hidden" fullWidth>
-        <img
-          src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(10).png?raw=true"
-          alt="Deliverables"
-          className="w-full h-full object-cover block"
-        />
+      {/* Club MDN Access (Section 20) */}
+      <Section id="club-mdn-access" className="bg-white py-20 md:py-32">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="font-display text-3xl md:text-5xl text-venus-black text-center mb-16 uppercase tracking-tight">
+            o que você acessa dentro do Club MDN
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[
+              "https://github.com/thebabirosa/images/blob/main/01im5.jpg?raw=true",
+              "https://github.com/thebabirosa/images/blob/main/01im6.jpg?raw=true",
+              "https://github.com/thebabirosa/images/blob/main/01im7.jpg?raw=true",
+              "https://github.com/thebabirosa/images/blob/main/01imimag.jpg?raw=true"
+            ].map((img, index) => (
+              <div key={index} className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lg group">
+                <img 
+                  src={img} 
+                  alt={`Club MDN Access ${index + 1}`} 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* Venus Circle Access (Section 21) */}
+      <Section id="venus-circle-access" className="bg-[#F5F5F5] py-20 md:py-32">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="font-display text-3xl md:text-5xl text-venus-black text-center mb-16 uppercase tracking-tight">
+            o que você acessa dentro do Círculo de Vênus
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[
+              "https://github.com/thebabirosa/images/blob/main/01im1.jpg?raw=true",
+              "https://github.com/thebabirosa/images/blob/main/01im2.jpg?raw=true",
+              "https://github.com/thebabirosa/images/blob/main/01im3.jpg?raw=true",
+              "https://github.com/thebabirosa/images/blob/main/01im4.jpg?raw=true"
+            ].map((img, index) => (
+              <div key={index} className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lg group">
+                <img 
+                  src={img} 
+                  alt={`Venus Circle Access ${index + 1}`} 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </Section>
 
       {/* Bonus (Image 22) - Replaced with full image as requested */}
@@ -82,58 +125,7 @@ export default function Offer() {
         />
       </Section>
 
-      {/* Investment (Image 23) - Replaced with "Aliadas Fundadoras" Bonus Layout as requested */}
-      <Section id="investment" className="bg-white py-20 px-6 max-w-7xl mx-auto w-full">
-        <div className="text-center mb-16">
-          <div className="relative inline-block mb-16">
-            <h2 className="font-display text-4xl md:text-6xl text-venus-black uppercase tracking-tight relative z-10">
-              BÔNUS EXCLUSIVO
-            </h2>
-            <p className="font-script text-6xl md:text-8xl text-venus-black absolute -bottom-10 md:-bottom-14 left-1/2 -translate-x-1/2 whitespace-nowrap z-20">
-              Aliadas fundadoras
-            </p>
-          </div>
-          
-          <div className="mt-16 space-y-2">
-            <p className="font-body text-xl md:text-2xl text-venus-black">
-              As 5 primeiras aliadas venusians receberão:
-            </p>
-            <p className="font-body text-xl md:text-2xl font-bold text-venus-black">
-              ✓ Acesso integral aos eventos institucionais do Clube Mulher de Negócios realizados em 2025
-            </p>
-            <p className="font-body text-xl md:text-2xl text-venus-black">
-              Valor estimado dessas experiências ao longo do ano: R$ 3.500 por 00,00
-            </p>
-          </div>
-        </div>
 
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div key={i} className="relative aspect-[9/16] rounded-2xl overflow-hidden group shadow-lg">
-              <img
-                src={`https://picsum.photos/seed/event-${i}/400/711`}
-                alt={`Event ${i}`}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-                <div className="w-12 h-12 rounded-full bg-white/30 backdrop-blur-md flex items-center justify-center border border-white/50">
-                  <div className="w-0 h-0 border-t-[8px] border-t-transparent border-l-[12px] border-l-white border-b-[8px] border-b-transparent ml-1" />
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="text-center space-y-1">
-          <p className="font-body text-sm text-venus-muted">
-            Eventos sujeitos à realização mediante número mínimo de participantes.*
-          </p>
-          <p className="font-body text-sm text-venus-muted">
-            Não inclui experiências premium extraordinárias ou viagens internacionais.*
-          </p>
-        </div>
-      </Section>
     </>
   );
 }

@@ -9,22 +9,16 @@ export default function Audience() {
   return (
     <>
       {/* Target Audience (Image 11) */}
-      <Section id="audience" className="bg-[#F4F4F4]" fullWidth>
+      <Section id="audience" className="bg-[#F4F4F4] py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
           <div className="flex flex-col justify-center p-12 md:p-24 bg-[#F4F4F4]">
-            <h2 className="font-display text-3xl md:text-5xl mb-4 text-venus-black">PARA QUEM É:</h2>
+            <h2 className="font-display text-4xl md:text-6xl mb-4 text-venus-black">PARA QUEM É:</h2>
             <p className="font-body text-xl md:text-2xl mb-8 font-semibold text-venus-black">
               Somos uma aceleradora estratégica para líderes que:
             </p>
             
             <div className="space-y-4 max-w-md">
-              {[
-                "Já validaram seu posicionamento no mercado",
-                "Já têm clientes pagantes e autoridade construída",
-                "Já faturam de forma consistente",
-                "Mas sentem que o modelo atual chegou no limite",
-                "E estão prontas para transformar faturamento em legado"
-              ].map((item, i) => (
+              {["Já são autoridade", "Já têm clientes", "Já faturam", "Mas querem escalar sem exaustão"].map((item, i) => (
                 <div key={i} className="border border-venus-black rounded-xl px-6 py-4 bg-white/50 shadow-sm">
                   <span className="font-body text-lg md:text-xl font-medium text-venus-black">{item}</span>
                 </div>
@@ -42,7 +36,7 @@ export default function Audience() {
       </Section>
 
       {/* Mindset Shift (Image 12) */}
-      <Section id="mindset" className="bg-[#F5F5F5]" fullWidth>
+      <Section id="mindset" className="bg-[#F5F5F5] py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
           <div className="relative h-[50vh] md:h-full order-2 md:order-1">
             <img
@@ -52,7 +46,7 @@ export default function Audience() {
             />
           </div>
           <div className="flex flex-col justify-center p-12 md:p-24 bg-[#F5F5F5] order-1 md:order-2">
-            <h2 className="font-display text-3xl md:text-5xl mb-8 uppercase">E SABEM QUE:</h2>
+            <h2 className="font-display text-4xl md:text-6xl mb-8 uppercase text-center md:text-left">E SABEM QUE:</h2>
             
             <div className="space-y-4">
               {[
@@ -64,13 +58,13 @@ export default function Audience() {
                 "O verdadeiro tesouro está na construção de longo prazo"
               ].map((point, i) => (
                 <div key={i} className="border border-venus-black rounded-full px-8 py-3 text-center hover:bg-venus-black hover:text-white transition-colors cursor-default">
-                  <span className="font-condensed uppercase tracking-widest text-sm">{point}</span>
+                  <span className="font-body text-base md:text-lg font-medium">{point}</span>
                 </div>
               ))}
             </div>
             
-            <div className="mt-12 text-center">
-              <p className="font-condensed text-sm uppercase tracking-wide">
+            <div className="mt-12 text-center md:text-right">
+              <p className="font-body text-base md:text-lg">
                 Esse chamado não é para quem está começando.<br/>
                 <span className="font-bold">É para quem já construiu e agora quer escalar com liberdade.</span>
               </p>
