@@ -41,15 +41,15 @@ export default function SocialProof() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
             {[
-              { month: "Fevereiro", event: "Imersão mulher de negócios O Renascimento", img: "https://picsum.photos/seed/feb/400/300" },
-              { month: "março", event: "MDN experiencie especial dia da mulher em alto mar.", img: "https://picsum.photos/seed/mar/400/300" },
-              { month: "abril", event: "MDN experience - business and wild. Passeio a cavalo na praia.", img: "https://picsum.photos/seed/apr/400/300" },
-              { month: "maio", event: "IMERSÃO MULHER DE NEGÓCIOS - 2 anos de club", img: "https://picsum.photos/seed/may/400/300" },
-              { month: "junho", event: "MDN Experience - Business & wine. Pintura em taça e vinho", img: "https://picsum.photos/seed/jun/400/300" },
-              { month: "julho", event: "• MDN Experience - Business & Wellness para empresárias", img: "https://picsum.photos/seed/jul/400/300" },
-              { month: "setembro", event: "Café de Negócios", img: "https://picsum.photos/seed/sep/400/300" },
-              { month: "outubro", event: "Viagem para europa investimento a parte", img: "https://picsum.photos/seed/oct/400/300" },
-              { month: "novembro", event: "Sunset de negócios Club MDN", img: "https://picsum.photos/seed/nov/400/300" }
+              { month: "Fevereiro", event: "Imersão mulher de negócios O Renascimento", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/5-1-scaled.jpg" },
+              { month: "março", event: "MDN experiencie especial dia da mulher em alto mar.", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/6-1-scaled.jpg" },
+              { month: "abril", event: "MDN experience - business and wild. Passeio a cavalo na praia.", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/7-1-scaled.jpg" },
+              { month: "maio", event: "IMERSÃO MULHER DE NEGÓCIOS - 2 anos de club", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/8-1-scaled.jpg" },
+              { month: "junho", event: "MDN Experience - Business & wine. Pintura em taça e vinho", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/Design-sem-nome-1-1.jpg" },
+              { month: "julho", event: "• MDN Experience - Business & Wellness para empresárias", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/10-scaled.jpg" },
+              { month: "setembro", event: "Café de Negócios", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/11-scaled.jpg" },
+              { month: "outubro", event: "Viagem para europa investimento a parte", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/12-scaled.jpg" },
+              { month: "novembro", event: "Sunset de negócios Club MDN", img: "https://metagenciadigital.com.br/wp-content/uploads/2026/02/13-scaled.jpg" }
             ].map((item, i) => (
               <div key={i} className="bg-white/80 backdrop-blur-sm rounded-3xl border border-venus-black/10 p-4 shadow-sm hover:shadow-md transition-all group">
                 <div className="w-full aspect-[4/3] overflow-hidden rounded-2xl mb-4">
@@ -103,7 +103,7 @@ export default function SocialProof() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="flex flex-col md:flex-row justify-center items-center mt-12">
             {[
               {
                 title: "clareza & personalização",
@@ -122,15 +122,15 @@ export default function SocialProof() {
                 desc: "primeiro evento com aliada, welcome kit e protagonismo."
               }
             ].map((item, i) => (
-              <div key={i} className="relative flex flex-col items-center">
-                <div className="w-full aspect-square rounded-full border border-venus-black flex flex-col items-center justify-center p-8 bg-white/5 backdrop-blur-[2px] relative">
+              <div key={i} className="relative flex flex-col items-center -mt-8 md:-mt-0 md:-ml-24 first:mt-0 md:first:ml-0 z-0 hover:z-10 transition-all duration-300 hover:scale-105">
+                <div className="w-72 h-72 md:w-80 md:h-80 rounded-full border border-venus-black flex flex-col items-center justify-center p-8 bg-white/80 backdrop-blur-sm relative shadow-lg">
                   {/* Star icons on top/bottom */}
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 text-venus-black text-xl">✦</div>
-                  <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 text-venus-black text-xl">✦</div>
+                  <div className="absolute top-4 left-1/2 -translate-x-1/2 text-venus-black text-xl">✦</div>
+                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-venus-black text-xl">✦</div>
                   
-                  <h3 className="font-script text-2xl md:text-3xl text-venus-black mb-4">{item.title}</h3>
-                  <div className="w-full h-[1px] bg-venus-black/30 mb-4" />
-                  <p className="font-body text-sm md:text-base text-venus-black leading-tight">
+                  <h3 className="font-script text-4xl md:text-5xl text-venus-black mb-2 leading-none">{item.title}</h3>
+                  <div className="w-16 h-[1px] bg-venus-black/30 mb-2" />
+                  <p className="font-body text-sm md:text-base text-venus-black leading-tight max-w-[90%]">
                     {item.desc}
                   </p>
                 </div>
@@ -237,12 +237,6 @@ export default function SocialProof() {
               <p className="font-body text-xl font-bold text-venus-black pt-4">
                 O Círculo de VÊNUS está aberto.
               </p>
-              
-              <div className="pt-8">
-                <Button className="w-full md:w-auto px-12 py-4 bg-[#B08D55] text-white hover:bg-[#9A7B4A] rounded-xl text-2xl font-display uppercase tracking-wider shadow-lg transition-all hover:scale-105">
-                  APLICAR AGORA
-                </Button>
-              </div>
             </div>
           </div>
           <div className="relative h-[60vh] md:h-auto">
@@ -312,12 +306,8 @@ export default function SocialProof() {
               ))}
             </div>
           </div>
-          <div className="relative h-[60vh] md:h-auto">
-            <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop"
-              alt="MDN Community"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
+          <div className="relative h-[60vh] md:h-auto bg-black flex items-center justify-center">
+             <div className="text-white/50 font-display text-2xl uppercase tracking-widest">Espaço para Vídeo</div>
           </div>
         </div>
       </Section>
@@ -325,11 +315,11 @@ export default function SocialProof() {
       <Section id="masterclasses" className="bg-[#F5F3F7] py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:min-h-screen">
           <div className="flex flex-col justify-center p-12 md:p-24 bg-[#F5F3F7]">
-            <div className="max-w-2xl">
-              <h2 className="font-display text-3xl md:text-4xl text-venus-black uppercase tracking-tight mb-2">
+            <div className="max-w-3xl">
+              <h2 className="font-display text-3xl md:text-5xl text-venus-black uppercase tracking-tight mb-0 whitespace-nowrap">
                 12 PASSOS PARA CONSTRUIR
               </h2>
-              <p className="font-script text-5xl md:text-6xl text-venus-black mb-12">
+              <p className="font-script text-5xl md:text-6xl text-venus-black mb-8 -mt-2">
                 um negócio valioso
               </p>
               
@@ -348,32 +338,31 @@ export default function SocialProof() {
                   "EXPANSÃO E LEGADO: CRIAÇÃO DE COMUNIDADE",
                   "DIVULGAÇÃO E CRIAÇÃO DE EVENTOS PRESENCIAIS"
                 ].map((step, i) => (
-                  <p key={i} className="flex gap-2">
-                    <span className="font-bold whitespace-nowrap">MASTERCLASS {i + 1}:</span>
+                  <p key={i} className="flex gap-2 items-center whitespace-nowrap">
+                    <span className="font-bold min-w-fit">MASTERCLASS {i + 1}:</span>
                     <span className="font-medium">{step}</span>
                   </p>
                 ))}
               </div>
               
-              <div className="mt-16 border border-[#B08D55] rounded-xl p-8 bg-white/40 text-center">
-                <p className="font-body font-bold text-sm md:text-lg uppercase tracking-wider text-venus-black">
-                  +MASTERCLASS DAS ALIADAS DO CLUB A CONFIRMAR - VOCE TAMBÉM PODE TRANSBORDAR SEU CONHECIMENTO AQUI
+              <div className="mt-12 border border-[#B08D55] rounded-xl p-8 bg-white/40 text-center">
+                <p className="font-body font-bold text-sm md:text-lg uppercase tracking-wider text-venus-black leading-relaxed max-w-2xl mx-auto">
+                  +MASTERCLASS DAS ALIADAS DO CLUB A CONFIRMAR<br />
+                  VOCE TAMBÉM PODE TRANSBORDAR SEU CONHECIMENTO AQUI
                 </p>
               </div>
             </div>
           </div>
           <div className="relative flex items-center justify-center p-8 md:p-16 bg-[#F5F3F7]">
-            <div className="relative w-full aspect-[3/4] max-w-md rounded-[40px] overflow-hidden shadow-2xl border-4 border-white">
-              <img
-                src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1638&auto=format&fit=crop"
-                alt="Recording Setup"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/10">
-                <div className="w-20 h-20 bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center border border-white/50 shadow-xl">
-                  <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[22px] border-l-white border-b-[12px] border-b-transparent ml-1" />
-                </div>
-              </div>
+            <div className="relative w-full aspect-[9/16] max-w-sm rounded-[40px] overflow-hidden shadow-2xl border-4 border-white">
+              <iframe 
+                className="absolute inset-0 w-full h-full object-cover"
+                src="https://www.youtube.com/embed/THjTKHwpD0A" 
+                title="YouTube video player" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </div>
@@ -383,7 +372,7 @@ export default function SocialProof() {
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:min-h-screen">
           <div className="relative h-[60vh] md:h-auto">
             <img
-              src="https://github.com/thebabirosa/images/blob/main/17.png?raw=true"
+              src="https://github.com/thebabirosa/images/blob/main/Design%20sem%20nome%20(12).png?raw=true"
               alt="Vênus Recognition Event"
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -392,10 +381,10 @@ export default function SocialProof() {
             <div className="max-w-md w-full space-y-12">
               {/* Stylized Title Box */}
               <div className="border border-venus-black rounded-xl p-8 text-center">
-                <h2 className="font-display text-4xl md:text-5xl text-venus-black uppercase tracking-tight leading-none">
+                <h2 className="font-display text-3xl md:text-4xl text-venus-black uppercase tracking-tight leading-none">
                   PROTAGONISMO
                 </h2>
-                <p className="font-script text-4xl md:text-5xl text-venus-black -mt-2">
+                <p className="font-script text-5xl md:text-6xl text-venus-black -mt-2">
                   & reconhecimento
                 </p>
               </div>

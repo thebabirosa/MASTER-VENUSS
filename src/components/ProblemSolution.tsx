@@ -48,7 +48,7 @@ export default function ProblemSolution() {
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
           <div className="flex flex-col justify-center p-12 md:p-24 bg-[#3c2d23] order-2 md:order-1 text-white">
             <div className="mb-12">
-              <h2 className="font-display text-4xl md:text-5xl uppercase leading-none mb-2 tracking-wide">
+              <h2 className="font-display text-4xl md:text-5xl uppercase leading-none mb-2 tracking-wide whitespace-nowrap">
                 O PROBLEMA NÃO É VOCÊ,
               </h2>
               <p className="font-script text-4xl md:text-5xl lowercase">

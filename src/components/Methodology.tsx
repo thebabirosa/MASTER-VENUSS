@@ -9,24 +9,23 @@ export default function Methodology() {
   return (
     <>
       {/* Methodology - Spheres (Image 13) - Replaced with "PARA QUEM NÃO É" as requested */}
-      <Section id="methodology" className="bg-[#F4F4F4]" fullWidth>
+      <Section id="methodology" className="bg-[#F4F4F4] py-0 md:py-0 px-0 md:px-0 max-w-none w-full" fullWidth>
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
           <div className="flex flex-col justify-center p-12 md:p-24 bg-[#F4F4F4]">
-            <h2 className="font-display text-3xl md:text-5xl mb-4 text-venus-black">PARA QUEM NÃO É:</h2>
+            <h2 className="font-display text-3xl md:text-6xl mb-4 text-venus-black whitespace-nowrap">PARA QUEM NÃO É:</h2>
             <p className="font-body text-xl md:text-2xl mb-8 font-semibold text-venus-black">
               Somos uma aceleradora estratégica para líderes que:
             </p>
             
             <div className="space-y-4 max-w-md">
               {[
-                "Ainda não validou produto ou modelo de negócio",
-                "Está buscando fórmula rápida",
-                "Quer aumentar faturamento sem estruturar base",
-                "Espera que alguém faça por ela",
-                "Quer crescer mantendo o mesmo modelo que já chegou no limite"
+                "Já são autoridade",
+                "Já têm clientes",
+                "Já faturam",
+                "Mas querem escalar sem exaustão"
               ].map((item, i) => (
-                <div key={i} className="border border-venus-black rounded-xl px-6 py-4 bg-white/50 shadow-sm">
-                  <span className="font-body text-lg md:text-xl font-medium text-venus-black">{item}</span>
+                <div key={i} className="border border-venus-black rounded-xl px-6 py-4 bg-white hover:bg-venus-black hover:text-white transition-colors cursor-default shadow-sm">
+                  <span className="font-body text-lg md:text-xl font-medium">{item}</span>
                 </div>
               ))}
             </div>
@@ -42,19 +41,19 @@ export default function Methodology() {
       </Section>
 
       {/* Transformation (Image 14) */}
-      <Section id="transformation" className="bg-white" fullWidth>
+      <Section id="transformation" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full" fullWidth>
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
           <div className="flex flex-col justify-center p-12 md:p-24 bg-white">
-            <h2 className="font-display text-4xl md:text-6xl mb-8 uppercase leading-none">
+            <h2 className="font-display text-4xl md:text-6xl mb-8 uppercase leading-snug tracking-wide">
               O QUE MUDA QUANDO VOCÊ OCUPA<br/>
               <span className="font-script text-4xl md:text-6xl lowercase">o lugar de escala e legado?</span>
             </h2>
             
             <div className="space-y-6 font-condensed text-sm text-venus-black">
-              <p>Você para de operar no limite.</p>
-              <p>Você constrói um ecossistema que gera lucro no curto, médio e longo prazo.</p>
-              <p>Você deixa de depender da própria energia para crescer.<br/>Você passa a operar dentro de um sistema que se retroalimenta.</p>
-              <p>Escalar deixa de ser vender mais.<br/>Passa a ser estruturar legado.</p>
+              <p>Você para de operar em um modelo que chegou ao platô.</p>
+              <p>E constrói um ecossistema que gera lucro e liberdade.<br/>Para de se esforçar tanto para crescer.<br/>E passa a crescer com previsibilidade e lucro.</p>
+              <p>Para depender da própria energia.<br/>E passa a operar em um sistema que se retroalimenta automaticamente.</p>
+              <p>Escala não é vender mais.<br/>é construir legado além do faturamento, e que gera lucro no curto, médio e principalmente no longo prazo.</p>
             </div>
           </div>
           <div className="relative h-[50vh] md:h-full">
@@ -68,7 +67,7 @@ export default function Methodology() {
       </Section>
 
       {/* Future Vision (Image 15) */}
-      <Section id="vision" className="bg-[#F5F5F5] py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
+      <Section id="vision" className="bg-[#F5F5F5] py-0 md:py-0 px-0 md:px-0 max-w-none w-full" fullWidth>
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
           <div className="relative h-[50vh] md:h-full order-2 md:order-1">
             <img
@@ -78,7 +77,7 @@ export default function Methodology() {
             />
           </div>
           <div className="flex flex-col justify-center p-12 md:p-24 bg-[#F5F5F5] order-1 md:order-2">
-            <h2 className="font-display text-4xl md:text-5xl mb-8 uppercase leading-tight">
+            <h2 className="font-display text-3xl md:text-5xl mb-8 uppercase leading-tight max-w-2xl">
               ONDE SEU NEGÓCIO ESTARÁ APÓS 12 MESES DE REESTRUTURAÇÃO:
             </h2>
             
@@ -106,11 +105,11 @@ export default function Methodology() {
       </Section>
 
       {/* Automatic Demand (Image 16) */}
-      <Section id="demand" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
+      <Section id="demand" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full" fullWidth>
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
           <div className="flex flex-col justify-center p-12 md:p-24 bg-white">
             <h2 className="font-script text-4xl md:text-5xl mb-2">Escala não é sobre volume,</h2>
-            <h2 className="font-display text-4xl md:text-5xl mb-8 uppercase leading-tight">
+            <h2 className="font-display text-4xl md:text-5xl mb-8 uppercase leading-tight max-w-3xl">
               É SOBRE UM MODELO QUE E GERA DEMANDA AUTOMÁTICA
             </h2>
             

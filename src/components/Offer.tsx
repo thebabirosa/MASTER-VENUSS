@@ -10,10 +10,10 @@ export default function Offer() {
   return (
     <>
       {/* Stakes (Image 19) - Replaced with new layout as requested */}
-      <Section id="stakes" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
+      <Section id="stakes" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full" fullWidth>
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
           <div className="flex flex-col justify-center p-12 md:p-24 bg-white text-center">
-            <h2 className="font-display text-4xl md:text-5xl mb-8 text-venus-black uppercase">O QUE ESTÁ EM JOGO?</h2>
+            <h2 className="font-display text-4xl md:text-5xl mb-8 text-venus-black uppercase whitespace-nowrap">O QUE ESTÁ EM JOGO?</h2>
             
             <div className="space-y-6 font-body text-lg text-venus-black mb-12 max-w-xl mx-auto">
               <p>Você pode continuar sustentando um modelo que depende de você, sem liberdade e com esforço e fragilidade.</p>
@@ -46,7 +46,7 @@ export default function Offer() {
       </Section>
 
       {/* CTA (Image 20) - Replaced with full image as requested */}
-      <Section id="cta" className="relative h-screen md:h-[120vh] p-0 max-w-none w-full overflow-hidden">
+      <Section id="cta" className="relative h-screen md:h-[120vh] p-0 max-w-none w-full overflow-hidden" fullWidth>
         <img
           src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(9).png?raw=true"
           alt="CTA"
@@ -55,7 +55,7 @@ export default function Offer() {
       </Section>
 
       {/* Deliverables (Image 21) - Replaced with full image as requested */}
-      <Section id="deliverables" className="relative h-screen md:h-[120vh] p-0 max-w-none w-full overflow-hidden">
+      <Section id="deliverables" className="relative h-screen md:h-[120vh] p-0 max-w-none w-full overflow-hidden" fullWidth>
         <img
           src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(10).png?raw=true"
           alt="Deliverables"
@@ -64,7 +64,7 @@ export default function Offer() {
       </Section>
 
       {/* Bonus (Image 22) - Replaced with full image as requested */}
-      <Section id="bonus" className="relative h-screen md:h-[120vh] p-0 max-w-none w-full overflow-hidden">
+      <Section id="bonus" className="relative h-screen md:h-[120vh] p-0 max-w-none w-full overflow-hidden" fullWidth>
         <img
           src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(11).png?raw=true"
           alt="Bonus"
@@ -75,11 +75,11 @@ export default function Offer() {
       {/* Investment (Image 23) - Replaced with "Aliadas Fundadoras" Bonus Layout as requested */}
       <Section id="investment" className="bg-white py-20 px-6 max-w-7xl mx-auto w-full">
         <div className="text-center mb-16">
-          <div className="relative inline-block mb-8">
-            <h2 className="font-display text-4xl md:text-6xl text-venus-black uppercase tracking-tight">
+          <div className="relative inline-block mb-16">
+            <h2 className="font-display text-4xl md:text-6xl text-venus-black uppercase tracking-tight relative z-10">
               BÔNUS EXCLUSIVO
             </h2>
-            <p className="font-script text-6xl md:text-8xl text-venus-black absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap">
+            <p className="font-script text-6xl md:text-8xl text-venus-black absolute -bottom-10 md:-bottom-14 left-1/2 -translate-x-1/2 whitespace-nowrap z-20">
               Aliadas fundadoras
             </p>
           </div>

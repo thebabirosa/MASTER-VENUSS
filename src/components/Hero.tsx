@@ -6,7 +6,7 @@ export default function Hero() {
   const { hero_01 } = landingPageData.sections.reduce((acc, section) => ({ ...acc, [section.id]: section }), {} as any);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#EAE0D5]">
+    <section className="relative min-h-screen flex items-start justify-center overflow-hidden bg-[#EAE0D5]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -16,7 +16,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 w-full flex flex-col items-center text-center pt-20 pb-32">
+      <div className="relative z-10 max-w-4xl mx-auto px-6 w-full flex flex-col items-center text-center pt-32 md:pt-40 pb-32">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="mb-6 max-w-3xl mx-auto"
+          className="mb-6"
         >
           <h1 className="font-script text-5xl md:text-7xl text-venus-black leading-[0.85]">
             Construa riqueza e<br />legado sem exaustão.
@@ -45,7 +45,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="mb-12 max-w-2xl mx-auto"
+          className="mb-12 max-w-2xl"
         >
           <p className="font-body text-lg md:text-xl text-venus-black leading-relaxed">
             através de uma marca forte, um ecossistema<br className="hidden md:block" />

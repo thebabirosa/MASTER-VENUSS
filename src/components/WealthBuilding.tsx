@@ -20,17 +20,17 @@ export default function WealthBuilding() {
             das mudanças de 2026, as Líderes Venusiana estão
           </p>
           
-          <div className="space-y-2">
-            <h2 className="font-display text-5xl md:text-6xl uppercase leading-none text-venus-black">
+          <div className="space-y-0">
+            <h2 className="font-display text-4xl md:text-7xl uppercase leading-none text-venus-black whitespace-nowrap">
               CONSTRUINDO RIQUEZA
             </h2>
-            <p className="font-script text-4xl md:text-5xl lowercase text-venus-black">
+            <p className="font-script text-5xl md:text-7xl lowercase text-venus-black -mt-2 md:-mt-4">
               sem exaustão
             </p>
           </div>
 
           <div className="pt-4">
-            <p className="font-script text-3xl md:text-4xl text-venus-black">
+            <p className="font-script text-4xl md:text-6xl text-venus-black leading-tight">
               somos uma aceleradora de<br />
               escala, lucro e legado
             </p>

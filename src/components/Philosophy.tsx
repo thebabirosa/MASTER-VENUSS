@@ -78,7 +78,7 @@ export default function Philosophy() {
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-6xl uppercase mb-2">O MÉTODO VÊNUS É</h2>
           <h2 className="font-display text-4xl md:text-6xl uppercase mb-4">ESTRUTURADO EM TRÊS PILARES:</h2>
-          <p className="font-script text-3xl md:text-4xl text-venus-black">Como construímos liberdade, lucro e previsibilidade</p>
+          <p className="font-script text-4xl md:text-5xl text-venus-black">Como construímos liberdade, lucro e previsibilidade</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
@@ -140,7 +140,7 @@ export default function Philosophy() {
 
         <div className="relative z-10 w-full max-w-6xl mx-auto px-4 text-center">
           <div className="mb-16">
-            <h2 className="font-display text-4xl md:text-6xl uppercase tracking-tight text-venus-black mb-2">
+            <h2 className="font-display text-4xl md:text-6xl uppercase tracking-tight text-venus-black mb-2 whitespace-nowrap">
               MAGNETISMO & PODER PESSOAL
             </h2>
             <p className="font-script text-4xl md:text-5xl text-venus-black">
