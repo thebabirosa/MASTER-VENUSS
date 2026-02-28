@@ -18,8 +18,8 @@ export default function Ecosystem() {
             />
           </div>
           <div className="flex flex-col justify-center p-12 md:p-24 bg-white">
-            <h2 className="font-display text-4xl md:text-5xl uppercase text-venus-black whitespace-nowrap">SOBRE SUA MENTORA</h2>
-            <h2 className="font-script text-6xl md:text-8xl text-venus-black mb-8">Paola Andreucci:</h2>
+            <h2 className="font-display text-3xl md:text-4xl uppercase text-venus-black whitespace-nowrap">SOBRE SUA MENTORA</h2>
+            <h2 className="font-script text-5xl md:text-6xl text-venus-black mb-8 whitespace-nowrap">Paola Andreucci:</h2>
             
             <div className="space-y-6 font-body text-base text-venus-black leading-relaxed">
               <p>Paola Andreucci é estrategista de marcas valiosas, mentora e especialista em posicionamento magnético.</p>

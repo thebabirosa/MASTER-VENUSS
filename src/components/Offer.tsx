@@ -60,7 +60,7 @@ export default function Offer() {
         <img
           src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(9).png?raw=true"
           alt="CTA"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover block"
         />
       </Section>
 
@@ -69,7 +69,7 @@ export default function Offer() {
         <img
           src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(10).png?raw=true"
           alt="Deliverables"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover block"
         />
       </Section>
 
@@ -78,7 +78,7 @@ export default function Offer() {
         <img
           src="https://github.com/thebabirosa/images/blob/main/C%C3%B3pia%20de%20PV%20MASTERMIND%20(11).png?raw=true"
           alt="Bonus"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover block"
         />
       </Section>
 

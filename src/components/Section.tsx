@@ -17,7 +17,7 @@ export default function Section({ children, className = "", id, background = "li
   };
 
   const paddingStyles = fullWidth ? "p-0" : "py-20 md:py-32 px-6 md:px-12";
-  const containerStyles = fullWidth ? "w-full" : "max-w-7xl mx-auto";
+  const containerStyles = fullWidth ? "w-full h-full" : "max-w-7xl mx-auto";
 
   return (
     <section id={id} className={`${paddingStyles} ${bgStyles[background]} ${className}`}>
