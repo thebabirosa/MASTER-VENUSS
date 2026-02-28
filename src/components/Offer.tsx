@@ -13,7 +13,7 @@ export default function Offer() {
       <Section id="stakes" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full" fullWidth>
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
           <div className="flex flex-col justify-center p-12 md:p-24 bg-white text-left">
-            <h2 className="font-display text-4xl md:text-5xl mb-8 text-venus-black uppercase whitespace-nowrap text-center md:text-left">O QUE ESTÁ EM JOGO?</h2>
+            <h2 className="font-display text-3xl md:text-4xl mb-8 text-venus-black uppercase whitespace-nowrap text-center md:text-left">O QUE ESTÁ EM JOGO?</h2>
             
             <div className="space-y-8 font-body text-lg md:text-xl text-venus-black mb-12 max-w-xl">
               <div className="space-y-1">

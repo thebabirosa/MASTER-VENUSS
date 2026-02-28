@@ -10,7 +10,7 @@ export default function Ecosystem() {
       {/* Mentor Bio (Image 17) - Replaced Ecosystem Logos as requested */}
       <Section id="mentor-bio" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
-          <div className="relative h-[50vh] md:h-full">
+          <div className="relative h-[50vh] md:h-auto md:min-h-screen">
             <img
               src="https://github.com/thebabirosa/images/blob/main/13.png?raw=true"
               alt="Paola Andreucci"

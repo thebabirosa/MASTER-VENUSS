@@ -24,7 +24,7 @@ export default function Hero() {
           className="mb-8"
         >
           <img 
-            src="https://github.com/thebabirosa/images/blob/main/idv%20venus%20master.png?raw=true" 
+            src="https://github.com/thebabirosa/images/blob/main/idv%20venus%20master%20(1).png?raw=true" 
             alt="O Círculo de Vênus Mastermind" 
             className="w-48 md:w-64 h-auto object-contain brightness-0"
           />
