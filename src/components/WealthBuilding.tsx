@@ -21,10 +21,10 @@ export default function WealthBuilding() {
           </p>
           
           <div className="space-y-0">
-            <h2 className="font-display text-4xl md:text-7xl uppercase leading-none text-venus-black whitespace-nowrap">
+            <h2 className="font-display text-3xl md:text-5xl uppercase leading-none text-venus-black whitespace-nowrap">
               CONSTRUINDO RIQUEZA
             </h2>
-            <p className="font-script text-5xl md:text-7xl lowercase text-venus-black -mt-2 md:-mt-4">
+            <p className="font-script text-4xl md:text-6xl lowercase text-venus-black -mt-2 md:-mt-4">
               sem exaustão
             </p>
           </div>

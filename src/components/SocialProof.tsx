@@ -316,10 +316,10 @@ export default function SocialProof() {
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:min-h-screen">
           <div className="flex flex-col justify-center p-12 md:p-24 bg-[#F5F3F7]">
             <div className="max-w-3xl">
-              <h2 className="font-display text-3xl md:text-5xl text-venus-black uppercase tracking-tight mb-0 whitespace-nowrap">
+              <h2 className="font-display text-2xl md:text-4xl text-venus-black uppercase tracking-tight mb-0 whitespace-nowrap">
                 12 PASSOS PARA CONSTRUIR
               </h2>
-              <p className="font-script text-5xl md:text-6xl text-venus-black mb-8 -mt-2">
+              <p className="font-script text-4xl md:text-5xl text-venus-black mb-8 -mt-2">
                 um negócio valioso
               </p>
               
@@ -381,10 +381,10 @@ export default function SocialProof() {
             <div className="max-w-md w-full space-y-12">
               {/* Stylized Title Box */}
               <div className="border border-venus-black rounded-xl p-8 text-center">
-                <h2 className="font-display text-3xl md:text-4xl text-venus-black uppercase tracking-tight leading-none">
+                <h2 className="font-display text-2xl md:text-3xl text-venus-black uppercase tracking-tight leading-none">
                   PROTAGONISMO
                 </h2>
-                <p className="font-script text-5xl md:text-6xl text-venus-black -mt-2">
+                <p className="font-script text-4xl md:text-5xl text-venus-black -mt-2">
                   & reconhecimento
                 </p>
               </div>

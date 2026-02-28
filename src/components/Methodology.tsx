@@ -12,7 +12,7 @@ export default function Methodology() {
       <Section id="methodology" className="bg-[#F4F4F4] py-0 md:py-0 px-0 md:px-0 max-w-none w-full" fullWidth>
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
           <div className="flex flex-col justify-center p-12 md:p-24 bg-[#F4F4F4]">
-            <h2 className="font-display text-3xl md:text-6xl mb-4 text-venus-black whitespace-nowrap">PARA QUEM NÃO É:</h2>
+            <h2 className="font-display text-3xl md:text-4xl mb-4 text-venus-black whitespace-nowrap">PARA QUEM NÃO É:</h2>
             <p className="font-body text-xl md:text-2xl mb-8 font-semibold text-venus-black">
               Somos uma aceleradora estratégica para líderes que:
             </p>
@@ -44,9 +44,9 @@ export default function Methodology() {
       <Section id="transformation" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full" fullWidth>
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
           <div className="flex flex-col justify-center p-12 md:p-24 bg-white">
-            <h2 className="font-display text-4xl md:text-6xl mb-8 uppercase leading-snug tracking-wide">
+            <h2 className="font-display text-3xl md:text-5xl mb-8 uppercase leading-snug tracking-wide">
               O QUE MUDA QUANDO VOCÊ OCUPA<br/>
-              <span className="font-script text-4xl md:text-6xl lowercase">o lugar de escala e legado?</span>
+              <span className="font-script text-3xl md:text-5xl lowercase">o lugar de escala e legado?</span>
             </h2>
             
             <div className="space-y-6 font-condensed text-sm text-venus-black">
@@ -77,7 +77,7 @@ export default function Methodology() {
             />
           </div>
           <div className="flex flex-col justify-center p-12 md:p-24 bg-[#F5F5F5] order-1 md:order-2">
-            <h2 className="font-display text-3xl md:text-5xl mb-8 uppercase leading-tight max-w-2xl">
+            <h2 className="font-display text-2xl md:text-4xl mb-8 uppercase leading-tight max-w-2xl">
               ONDE SEU NEGÓCIO ESTARÁ APÓS 12 MESES DE REESTRUTURAÇÃO:
             </h2>
             
@@ -108,8 +108,8 @@ export default function Methodology() {
       <Section id="demand" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full" fullWidth>
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
           <div className="flex flex-col justify-center p-12 md:p-24 bg-white">
-            <h2 className="font-script text-4xl md:text-5xl mb-2">Escala não é sobre volume,</h2>
-            <h2 className="font-display text-4xl md:text-5xl mb-8 uppercase leading-tight max-w-3xl">
+            <h2 className="font-script text-3xl md:text-4xl mb-2">Escala não é sobre volume,</h2>
+            <h2 className="font-display text-3xl md:text-4xl mb-8 uppercase leading-tight max-w-3xl">
               É SOBRE UM MODELO QUE E GERA DEMANDA AUTOMÁTICA
             </h2>
             
