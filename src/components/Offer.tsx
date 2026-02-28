@@ -12,28 +12,38 @@ export default function Offer() {
       {/* Stakes (Image 19) - Replaced with new layout as requested */}
       <Section id="stakes" className="bg-white py-0 md:py-0 px-0 md:px-0 max-w-none w-full" fullWidth>
         <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-screen">
-          <div className="flex flex-col justify-center p-12 md:p-24 bg-white text-center">
-            <h2 className="font-display text-4xl md:text-5xl mb-8 text-venus-black uppercase whitespace-nowrap">O QUE ESTÁ EM JOGO?</h2>
+          <div className="flex flex-col justify-center p-12 md:p-24 bg-white text-left">
+            <h2 className="font-display text-4xl md:text-5xl mb-8 text-venus-black uppercase whitespace-nowrap text-center md:text-left">O QUE ESTÁ EM JOGO?</h2>
             
-            <div className="space-y-6 font-body text-lg text-venus-black mb-12 max-w-xl mx-auto">
-              <p>Você pode continuar sustentando um modelo que depende de você, sem liberdade e com esforço e fragilidade.</p>
-              <p>Ou pode construir um ecossistema escalável, lucrativo, previsível, que ger legado e que sustenta você.</p>
+            <div className="space-y-8 font-body text-lg md:text-xl text-venus-black mb-12 max-w-xl">
+              <div className="space-y-1">
+                <p>Não é uma mentoria de marketing.</p>
+                <p>Não é um grupo de networking.</p>
+                <p>Não é sobre fazer mais.</p>
+              </div>
+
+              <div className="space-y-1">
+                <p>É sobre deixar de operar no limite.</p>
+                <p>É sobre sair do modelo que depende de você e construir um ativo que trabalha a seu favor.</p>
+              </div>
+
+              <div className="space-y-1">
+                <p className="font-bold">É sobre estruturar o negócio que você vai sustentar pelos próximos 10 anos.</p>
+                <p>Porque riqueza não é pico.</p>
+              </div>
+
+              <div className="space-y-1">
+                <p className="font-bold mb-2">Riqueza é:</p>
+                <p>Liberdade</p>
+                <p>Tempo de qualidade</p>
+                <p>Paz de espírito</p>
+                <p>Legado</p>
+              </div>
+              
+              <p className="pt-4">
+                O Mastermind VÊNUS é a estrutura para isso.
+              </p>
             </div>
-            
-            <p className="font-body text-xl text-venus-black mb-2">Riqueza não é só faturamento.</p>
-            <p className="font-script text-5xl text-venus-black mb-8">Riqueza é:</p>
-            
-            <div className="space-y-3 max-w-md mx-auto w-full mb-12">
-              {["Liberdade", "Tempo de qualidade", "Paz de espírito", "Construir Legado"].map((item, i) => (
-                <div key={i} className="border border-venus-black rounded-xl px-6 py-3 bg-white shadow-sm">
-                  <span className="font-body text-xl font-medium text-venus-black">{item}</span>
-                </div>
-              ))}
-            </div>
-            
-            <p className="font-body text-xl font-medium text-venus-black">
-              O Mastermind VÊNUS é a estrutura para isso.
-            </p>
           </div>
           <div className="relative h-[50vh] md:h-full">
             <img
